@@ -1,0 +1,156 @@
+.servicePageSection {
+  padding: 0px 0px 50px 0px;
+}
+.servicePageText h2 {
+  margin:10px 0;
+}
+
+.servicePageText h2 {
+  color: var(---primeColor);
+  font-family: var(---robotFont);
+  font-size: 1.5rem;
+  font-weight: 200;
+  text-transform: capitalize;
+
+}
+
+.servicePageText p {
+  text-align: justify;
+  font-size: 1.2rem;
+  font-weight: normal;
+  word-spacing: 2px;
+  font-family: var(---robotFont);
+}
+
+.servicePageSection .servicePageImg1 {
+  width: 100%;
+  height: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.servicePageSection .servicePageImg1 img {
+  border-radius: 5px;
+  max-width: 500px;
+  height: 100%;
+}
+
+.servicePageSection .servicePageText ul {
+  margin: 0;
+  padding: 0;
+}
+
+.servicePageSection .servicePageText ul li {
+  border-radius: 0px;
+  font-size: 16px;
+  font-weight: 400;
+  color: #575757;
+  line-height: 24px;
+  list-style: none;
+  background-image: url(https://www.dranupramani.com/wp-content/themes/opal_main/images/aero.png);
+  background-repeat: no-repeat;
+  background-position: 0 4px;
+  padding-left: 30px;
+  margin-bottom: 1px;
+  word-break: keep-all;
+  float: left;
+  width: 100%;
+}
+
+.servicePageText ul li a {
+  color: var(---primeColor);
+  font-size: 1rem;
+}
+
+.serviceDetails {
+  background: #164388;
+  color: #fff !important;
+}
+
+.serviceDetails .serviceCeterTittle h2 {
+  font-size: 2rem;
+  font-weight: 500;
+  text-transform: capitalize;
+  color: #fff;
+  position: relative;
+  font-family: var(---robotFont);
+}
+
+
+.serviceDetails p {
+  font-family: inherit;
+  font-weight: 100;
+  font-size: 1.2rem;
+  text-align: justify;
+  line-height: 1.4;
+}
+
+@media (max-width: 500px) {
+  .servicePageText h2 {
+    font-size: 1.4rem;
+  }
+  .servicePageSection .servicePageImg1 img {
+    max-width: 244px;
+  }
+
+  .serviceDetails .serviceCeterTittle {
+    font-size: 1.4rem;
+    margin-bottom: 20px;
+  }
+  .serviceDetails p {
+    font-size: 1rem;
+  }
+}
+.cause b
+{
+  font-weight:700;
+}
+
+/* -----------------------------prostate Cancer--------------------- */
+.afterImg
+{
+  height:310px;
+  margin-top:20px;
+
+}
+.afterImg img
+{
+  height:100%;
+  width:100%;
+  
+}
+.dreImg
+{
+  height:150px;
+ margin-top:10px;
+
+}
+.dreImg img
+{
+  height:100%;
+  width:100%;
+  
+}
+.surgImg
+{
+  height:300px;
+
+}
+.surgImg img
+{
+  height:100%;
+  width:100%;
+  
+}
+.impImg
+{
+  height:150px;
+  
+}
+.impImg img
+{
+  height:100%;
+  width:100%;
+  
+}

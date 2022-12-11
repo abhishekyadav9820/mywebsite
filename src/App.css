@@ -1,0 +1,115 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700&family=Poppins:wght@300;500;600;700;800&family=Roboto:wght@400;500;700;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Racing+Sans+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+:root {
+  ---robotFont: "Roboto", sans-serif;
+  ---popinsFont: "Poppins", sans-serif;
+  ---racingFont: "Racing Sans One", cursive;
+  ---monsterFont: "Montserrat", sans-serif;
+  ---primeColor: #164388;
+  ---secondColor: #2b3093;
+}
+
+input[type="number"] {
+  -moz-appearance: textfield;
+}
+
+section {
+  padding: 50px 0 50px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.titleSection {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 50px 20px;
+  flex-direction: column;
+  position: relative;
+}
+
+.titleSection h2 {
+  font-size: 2rem;
+  font-weight: 500;
+  font-family: var(---monsterFont);
+  text-transform: capitalize;
+  color: var(---secondColor);
+  position: relative;
+}
+
+.titleSection p {
+  max-width: 800px;
+  color: #111;
+  font-weight: 500;
+  font-size: 1rem;
+}
+
+.titleSection img {
+  width: 30px;
+  height: 30px;
+  margin: 0 10px;
+}
+
+.titleSection:after {
+  content: "";
+  position: absolute;
+  width: 3px;
+  height: 5rem;
+  background: var(---secondColor);
+  border-radius: 50px;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 0;
+}
+
+@media (max-width: 990px) {
+  section {
+    padding: 20px 0 30px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  .titleSection h2 {
+    font-size: 1.8rem;
+  }
+  .titleSection p {
+    text-align: left;
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 500px) {
+  section {
+    padding: 20px 0 20px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  .titleSection {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 30px 10px;
+    flex-direction: column;
+    position: relative;
+  }
+
+  .titleSection::after {
+    height: 7rem;
+  }
+  .titleSection h2 {
+    font-size: 1.4rem;
+    text-align: left;
+  }
+  .titleSection p {
+    text-align: left;
+    font-size: 0.85rem;
+  }
+}

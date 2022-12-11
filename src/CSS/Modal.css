@@ -1,0 +1,199 @@
+/* ============================================ Equary Modal ============================== */
+#partner {
+  width: 100%;
+  z-index: 1000;
+  flex-direction: column;
+}
+.programButton {
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.clickable {
+  cursor: pointer;
+}
+
+.partnerProgramForm {
+  padding: 20px 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  position: relative;
+  z-index: 1000;
+  margin: auto;
+  border-radius: 10px;
+  cursor: pointer;
+  animation: uparrow 0.6s infinite alternate ease-in-out;
+}
+
+.partnerProgramForm form {
+  width: 100%;
+}
+
+.formTitle h2 {
+  text-align: center;
+  font-size: 1.6rem;
+  font-weight: 700;
+  color: #111;
+}
+
+.login-box {
+  width: 100%;
+  position: relative;
+  padding: 10px 0;
+  box-sizing: border-box;
+}
+
+.login-box h2 {
+  margin: 0 0 30px;
+  padding: 0;
+  color: #fff;
+  text-align: center;
+}
+
+.login-box .user-box {
+  position: relative;
+}
+
+.login-box .user-box input {
+  width: 100%;
+  padding: 10px 0;
+  font-size: 16px;
+  color: #111;
+  margin-bottom: 20px;
+  border: none;
+  border-bottom: 1px solid #111;
+  outline: none;
+  background: transparent;
+}
+
+.login-box .user-box select {
+  width: 100%;
+  padding: 10px 0;
+  font-size: 16px;
+  color: #111;
+  margin-bottom: 20px;
+  border: none;
+  border-bottom: 1px solid #111;
+  outline: none;
+  background: transparent;
+}
+.login-box .user-box select:focus {
+  box-shadow: none;
+}
+
+.login-box .user-box label {
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 10px 0;
+  font-size: 16px;
+  color: #000;
+  pointer-events: none;
+  transition: 0.5s;
+}
+
+/* .login-box .user-box input:focus ~ label {
+  top: -20px;
+  left: 0;
+  color: #111;
+  font-size: 12px;
+} */
+
+.login-box .user-box input:valid ~ label {
+  top: -20px;
+  left: 0;
+  color: #111;
+  font-size: 12px;
+}
+
+.login-box .user-box .datelabel {
+  top: -20px;
+  left: 0;
+  color: #111;
+  font-size: 12px;
+}
+
+.login-box .user-box input[type="date"] {
+  color: #111;
+}
+
+.login-box button {
+  display: inline-block;
+  width: 100%;
+  padding: 7px 0;
+  color: #fff;
+  font-size: 16px;
+  text-decoration: none;
+  text-transform: capitalize;
+  overflow: hidden;
+  transition: 0.5s;
+  font-weight: 600;
+  margin-top: 10px;
+  text-align: center;
+  border: 2px solid var(---secondColor);
+  background-color: var(---secondColor);
+  border-radius: 7px;
+}
+
+.fa-times {
+  position: absolute;
+  right: 20px;
+  font-size: 1.4rem;
+  transition: 0.5s ease-in-out;
+}
+
+.programButtonClick {
+  position: fixed;
+  margin: 0;
+  top: 50%;
+  background-color: #1b468a;
+  color: #111;
+  padding: 6px 14px;
+  font-size: 1.1rem;
+  text-decoration: none;
+  font-weight: 700;
+  opacity: 1;
+  right: -40px;
+  z-index: 10000;
+  border-top-left-radius: 6px;
+  border-top-right-radius: 6px;
+  transform: rotate(270deg);
+}
+
+.programButtonClick:hover {
+  color: #fff;
+}
+
+/* Chrome, Safari, Edge, Opera */
+
+.custPhone1::-webkit-outer-spin-button,
+.custPhone1::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+
+.custPhone1 {
+  -moz-appearance: textfield;
+}
+
+.modal-backdrop.show {
+  visibility: hidden;
+}
+
+@media (max-width: 500px) {
+  #partner {
+    padding-top: 0px;
+  }
+  .programButtonClick {
+    position: fixed;
+    margin: 0;
+    top: 50%;
+    font-size: 1rem;
+    right: -35px;
+    padding: 4px 10px;
+  }
+}

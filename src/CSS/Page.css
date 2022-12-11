@@ -1,0 +1,93 @@
+.UnderCunstruction #backgroundImage1,
+.UnderCunstruction #backgroundImage2,
+.ovarlay,
+.UnderCunstruction .infoText {
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  color: #fff;
+  margin: auto;
+  position: absolute;
+}
+
+.UnderCunstruction backgroundImage,
+.UnderCunstruction #backgroundImage1,
+.UnderCunstruction #backgroundImage2 {
+  background-color: #555;
+  background-image: url("https://unsplash.it/1200/750/?random&0");
+  background-position: center center;
+  background-size: cover;
+}
+
+.UnderCunstruction .ovarlay {
+  background: rgba(0, 0, 0, 0.6);
+  z-index: 5;
+}
+
+.UnderCunstruction .infoText {
+  font-size: 80px;
+  text-align: center;
+  top: 40%;
+  background: none;
+  letter-spacing: 10px;
+  z-index: 6;
+  padding: 10px;
+}
+
+.UnderCunstruction .infoText span {
+  font-size: 14px;
+  letter-spacing: 40px;
+  display: block;
+}
+
+.UnderCunstruction .hide {
+  opacity: 0;
+  -webkit-transition: all 3s 3s ease-in-out;
+  -moz-transition: all 3s 3s ease-in-out;
+  -ms-transition: all 3s 3s ease-in-out;
+  -o-transition: all 3s 3s ease-in-out;
+  transition: all 3s 3s ease-in-out;
+  z-index: 2;
+}
+
+.UnderCunstruction .show {
+  opacity: 1;
+  -webkit-transition: all 3s 3s ease-in-out;
+  -moz-transition: all 3s 3s ease-in-out;
+  -ms-transition: all 3s 3s ease-in-out;
+  -o-transition: all 3s 3s ease-in-out;
+  transition: all 3s 3s ease-in-out;
+  z-index: 3;
+}
+
+.scaleImage {
+}
+
+@keyframes slidein {
+  from {
+  }
+  to {
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .UnderCunstruction .infoText {
+    font-size: 40px;
+    letter-spacing: 5px;
+  }
+  .UnderCunstruction .infoText span {
+    letter-spacing: 20px;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .UnderCunstruction .infoText {
+    font-size: 20px;
+    letter-spacing: 1px;
+  }
+  .UnderCunstruction .infoText span {
+    font-size: 10px;
+    letter-spacing: 10px;
+  }
+}

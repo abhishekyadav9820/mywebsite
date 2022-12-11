@@ -1,0 +1,388 @@
+/* ===================================================== Footer Section ==================================== */
+
+footer {
+  background-color: var(---primeColor);
+  padding: 50px 0;
+  overflow: hidden;
+}
+
+.footerAbout {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+}
+
+.companyDetail img {
+  width: 300px;
+  height: 75px;
+  margin-bottom: 15px;
+}
+
+.companyDetail h5 {
+  color: #fff;
+  text-transform: capitalize;
+  font-weight: 300;
+  margin: 0 24px;
+}
+
+.companyDetail p {
+  color: #eee;
+  font-weight: 400;
+  font-size: 0.9rem;
+  text-align: justify;
+}
+
+.footerSocialIcon ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  display: flex;
+}
+
+.footerSocialIcon ul li {
+  margin: 0 10px;
+}
+
+.footerSocialIcon ul li a {
+  width: 35px;
+  height: 35px;
+  border: 2px solid #fff;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50px;
+  text-decoration: none;
+  transition: 0.5s ease-in-out;
+}
+
+.footerSocialIcon ul li a:hover {
+  color: #fff;
+  border: var(---secondColor);
+  background-color: var(---primeColor);
+  transition: 0.5s ease-in-out;
+}
+
+.footerContact h4,
+.listofLinks h4 {
+  color: #fff;
+  font-size: 1.4rem;
+  font-weight: 500;
+  position: relative;
+  margin: 0 0 10px 0;
+  padding: 0 0 10px 0;
+  position: relative;
+}
+
+.footerContact h4:after,
+.listofLinks h4::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  border-radius: 50px;
+  background-color: var(---primeColor);
+  width: 3rem;
+  height: 2px;
+}
+
+.footerContact ul,
+.listofLinks ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.listofLinks ul li {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin: 7px 0;
+}
+
+.footerContact ul li {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  margin: 7px 0;
+}
+
+.footerContact ul li a,
+.listofLinks ul li a {
+  color: #eee;
+  font-size: 1rem;
+  font-family: var(---robotFont);
+  text-decoration: none;
+  font-weight: 100;
+}
+
+.listofLinks ul li span {
+  color: #fff;
+}
+
+.footerContact ul li span {
+  color: #eee;
+  margin: 0 10px 0 0;
+}
+
+.copyrightsDetail {
+  background-color: #111;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 100px;
+}
+
+.copyrightsDetail span {
+  color: #fff;
+  font-size: 1rem;
+  text-transform: capitalize;
+}
+
+.footer-bottom {
+  width: 100%;
+  max-width: 100%;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  color: #fff;
+}
+.footer-bottom .copyright {
+  float: left;
+}
+
+.footer-bottom .credits {
+  float: right;
+  font-size: 13px;
+}
+
+.footer-bottom .credits a {
+  transition: 0.3s;
+  text-decoration: none;
+  font-family: var(---robotFont);
+}
+
+@media (max-width: 500px) {
+  .copyrightsDetail {
+    background-color: #111;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    flex-direction: column;
+  }
+  .footerContact ul li a,
+  .listofLinks ul li a {
+    color: #eee;
+    font-size: 0.9rem;
+    font-family: var(---robotFont);
+    text-decoration: none;
+    font-weight: 100;
+  }
+
+  .companyDetail img {
+    width: 220px;
+    height: auto;
+    margin-bottom: 15px;
+  }
+  .companyDetail h5 {
+    color: #fff;
+    text-transform: capitalize;
+    font-weight: 300;
+    margin: 0 10px;
+  }
+  .copyrightsDetail span {
+    color: #fff;
+    font-size: 0.9rem;
+    text-align: center;
+    text-transform: capitalize;
+  }
+  .footerContact h4,
+  .listofLinks h4 {
+    font-size: 1.2rem;
+  }
+  .footer-bottom {
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+  .footer-bottom .copyright,
+  .footer-bottom .credits {
+    text-align: center;
+    float: none;
+  }
+  #footer .credits {
+    padding-top: 4px;
+  }
+}
+
+/* ============================== Floatting Button ================================ */
+
+.floatingText {
+  width: auto;
+  height: auto;
+  position: fixed;
+  bottom: 40px;
+  z-index: 1000;
+  right: 130px;
+  animation: angleCross 0.8s ease-in-out infinite forwards;
+}
+
+@keyframes angleCross {
+  0% {
+    opacity: 1;
+    transform: translateX(-5px);
+  }
+  50% {
+    opacity: 0;
+    transform: translateX(0px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(-5px);
+  }
+}
+
+.floatingText p {
+  background-color: #eee;
+  font-size: 1rem;
+  font-weight: 500;
+  padding: 5px;
+  position: relative;
+}
+
+.floatingText p:after {
+  content: "";
+  position: absolute;
+  width: 1.5rem;
+  height: 1.5rem;
+  background-color: #eee;
+  top: 5;
+  transform: rotate(225deg);
+  right: -12px;
+  z-index: -1;
+}
+
+.floattingButton .float {
+  position: fixed;
+  width: 60px;
+  height: 60px;
+  bottom: 40px;
+  right: 40px;
+  background-color: #4e6ea1;
+  color: #fff;
+  border-radius: 50px;
+  text-align: center;
+  z-index: 1000;
+  animation: bot-to-top 2s ease-out;
+}
+
+.floattingButton ul {
+  position: fixed;
+  right: 40px;
+  padding-bottom: 20px;
+  bottom: 80px;
+  z-index: 100;
+}
+
+.floattingButton ul li {
+  list-style: none;
+  margin-bottom: 10px;
+}
+
+a {
+  text-decoration: none;
+  color: #fff;
+}
+
+a:hover {
+  color: #fff;
+}
+
+.floattingButton ul li:first-child {
+  background-color: rgb(11, 224, 22);
+  border-radius: 50px;
+  text-align: center;
+  width: 60px;
+  height: 60px;
+  display: block;
+}
+
+.floattingButton ul li:last-child {
+  background-color: rgb(4, 99, 50);
+  border-radius: 50px;
+  text-align: center;
+  width: 60px;
+  height: 60px;
+  display: block;
+}
+
+.floattingButton ul:hover {
+  visibility: visible !important;
+  opacity: 1 !important;
+}
+
+.floattingButton a#menu-share + ul {
+  visibility: hidden;
+}
+
+.floattingButton a#menu-share:hover + ul {
+  visibility: visible;
+  animation: scale-in 0.5s;
+}
+
+.floattingButton .my-float {
+  font-size: 24px;
+  margin-top: 18px;
+}
+
+@media (max-width: 768px) {
+  .floatingText p {
+    display: none;
+  }
+}
+
+.floattingButton a#menu-share i {
+  animation: rotate-in 0.5s;
+}
+
+.floattingButton a#menu-share:hover > i {
+  animation: rotate-out 0.5s;
+}
+
+@keyframes bot-to-top {
+  0% {
+    bottom: -40px;
+  }
+  50% {
+    bottom: 40px;
+  }
+}
+
+@keyframes scale-in {
+  from {
+    transform: scale(0);
+    opacity: 0;
+  }
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+@keyframes rotate-in {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes rotate-out {
+  from {
+    transform: rotate(360deg);
+  }
+  to {
+    transform: rotate(0deg);
+  }
+}

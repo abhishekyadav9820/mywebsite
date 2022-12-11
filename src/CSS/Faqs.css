@@ -1,0 +1,357 @@
+/* .whoWeareBanner {
+  background: linear-gradient(to right, rgb(0, 0, 0, 0.5), rgb(0, 0, 0, 0.5)),
+    url("../Image/faq.jpg");
+  background-size: 100% 100%;
+  background-position: bottom left;
+  display: flex;
+  background-repeat: no-repeat;
+  justify-content: flex-end;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  height: 58vh;
+  padding-bottom: 100px;
+}
+
+#faqi form {
+  display: flex;
+  width: 35rem;
+  background-color: #fff;
+  align-items: center;
+  margin: 0 auto;
+  border-radius: 1rem;
+}
+#faqi form svg {
+  height: 1rem;
+  fill: #9ea6ae;
+  position: fixed;
+  width: 4rem;
+}
+
+#faqi .searchbar {
+  font-family: "Poppins", sans-serif;
+  font-size: 1rem;
+  font-weight: 400;
+  border: none;
+  padding: 1rem;
+  padding-left: 4rem;
+  width: 100%;
+  box-shadow: 0px 5px 13px 0px #dee4f1;
+  border-radius: 0.8rem;
+}
+
+#faqi .searchbar:focus {
+  outline: none;
+  box-shadow: 0 0 0 1.5px #dee4f1, 0px 5px 13px 0px #dee4f1;
+}
+
+#faqi .faq {
+  margin: 3rem 0;
+}
+
+#faqi .question-wrapper {
+  width: 100%;
+  border-bottom: 1px solid #dee4f1;
+  margin: 0 auto;
+  padding: 1rem;
+  transition: 1s;
+}
+
+#faqi .question {
+  display: flex;
+  font-size: 1rem;
+  font-weight: 500;
+  color: #212943;
+  display: flex;
+  justify-content: space-between;
+}
+
+.question h3 {
+  font-size: 1.2rem;
+}
+
+.question svg {
+  width: 1rem;
+  height: 1.5rem;
+  fill: #9ea6ae;
+}
+.question svg.active {
+  transform: rotate(180deg);
+}
+.question svg:hover {
+  opacity: 0.8;
+}
+
+#faqi button {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+#faqi button:focus {
+  outline: none;
+}
+
+.answer {
+  display: none;
+}
+
+.answer.active {
+  display: block;
+  text-align: left;
+  padding-top: 1.5rem;
+  font-weight: light;
+  font-size: 1rem;
+  line-height: 1.5;
+  color: #9ea6ae;
+  height: 0%;
+  animation: slidein 0.4s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes slidein {
+  from {
+    opacity: 0.3;
+    transform: translateY(-20%);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0%);
+  }
+} */
+
+
+
+/* ---------------------------updated code------------------- */
+@import url('https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@700&display=swap');
+
+.whoWeareBanner {
+  background: linear-gradient(to right, rgb(0, 0, 0, 0.5), rgb(0, 0, 0, 0.5)),
+    url("../Image/faq.jpg");
+  background-size: 100% 100%;
+  background-position: bottom left;
+  display: flex;
+  background-repeat: no-repeat;
+  justify-content: flex-end;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  height: 58vh;
+  padding-bottom: 100px;
+}
+
+#faqi form {
+  display: flex;
+  width: 35rem;
+  background-color: #fff;
+  align-items: center;
+  margin: 0 auto;
+  border-radius: 1rem;
+}
+
+#faqi form svg {
+  height: 1rem;
+  fill: #9ea6ae;
+  position: fixed;
+  width: 4rem;
+}
+
+#faqi .searchbar {
+  font-family: "Poppins", sans-serif;
+  font-size: 1rem;
+  font-weight: 400;
+  border: none;
+  padding: 1rem;
+  padding-left: 4rem;
+  width: 100%;
+  box-shadow: 0px 5px 13px 0px #dee4f1;
+  border-radius: 0.8rem;
+}
+
+#faqi .searchbar:focus {
+  outline: none;
+  box-shadow: 0 0 0 1.5px #dee4f1, 0px 5px 13px 0px #dee4f1;
+}
+
+#faqi .faq {
+  margin: 3rem 0;
+}
+
+#faqi .question-wrapper {
+  width: 100%;
+  border-bottom: 1px solid #dee4f1;
+  margin: 0 auto;
+  padding: 1rem;
+  transition: 1s;
+}
+
+#faqi .question {
+  display: flex;
+  font-size: 1rem;
+  font-weight: 500;
+  color: #212943;
+  display: flex;
+  justify-content: space-between;
+}
+
+.question h3 {
+  font-size: 1.2rem;
+}
+
+.question svg {
+  width: 1rem;
+  height: 1.5rem;
+  fill: #9ea6ae;
+}
+
+.question svg.active {
+  transform: rotate(180deg);
+}
+
+.question svg:hover {
+  opacity: 0.8;
+}
+
+#faqi button {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+#faqi button:focus {
+  outline: none;
+}
+
+.answer {
+  display: none;
+}
+
+.answer.active {
+  display: block;
+  text-align: left;
+  padding-top: 1.5rem;
+  font-weight: light;
+  font-size: 1rem;
+  line-height: 1.5;
+  color: #9ea6ae;
+  height: 0%;
+  animation: slidein 0.4s;
+  animation-fill-mode: forwards;
+}
+
+
+/* /////////////////////////////////////////////////// Section 1 ///////////////////////////////////////////// */
+
+.FAQ-section1 {
+  /* border: 1px solid red; */
+  padding-top: 10vh;
+}
+
+.FAQ-Section-Conatiner {
+  /* border: 1px solid black; */
+}
+
+.FAQ-Heading {
+  /* border: 1px solid magenta; */
+  margin: 20px;
+}
+
+.FAQ-Heading h1 {
+  position: relative;
+  /* border: 1px solid red; */
+  display: inline-block;
+  margin: 20px;
+  padding-bottom: 10px;
+  font-family: var(---styleFont3);
+}
+
+.FAQ-Heading h1::before {
+  content: "";
+  position: absolute;
+  height: 3px;
+  width: 100%;
+  background-color: gray;
+  bottom: 0;
+  left: 0;
+}
+
+
+.FAQ-Points {
+  /* border: 1px solid blue; */
+  margin: 20px;
+}
+
+.accordion-button {
+  font-family: var(---styleFont4);
+
+}
+
+.Accordion-Para1 {
+  /* border: 1px solid black; */
+}
+
+.Accordion-Para1 p {
+  /* border: 1px solid blue; */
+  text-align: justify;
+  font-size: 0.9rem;
+  font-weight: normal;
+  font-family: var(---robotFont);
+}
+
+.Accordion-Points-head {}
+
+.Accordion-Points-head h5 {
+  color: #9d9d9d;
+  font-weight: 600;
+  font-size: 1rem;
+  font-family: var(---styleFont4);
+  letter-spacing: 1px;
+}
+
+.Accordion-Main-Points ul li {}
+
+.Accordion-End-Para p {
+  text-align: justify;
+  font-size: 0.9rem;
+  font-weight: normal;
+  font-family: var(---robotFont);
+}
+
+.Accordion-Para-with-Image{
+  /* border: 1px solid red; */
+}
+
+.Accordion-Image-con{
+  /* border: 1px solid black; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.Accordion-Image{
+  /* border: 1px solid blue; */
+  margin: 10px;
+  height: 30vh;
+  width: 40vh;
+}
+
+.Accordion-Image img{
+  height: 100%;
+  width: 100%;
+}
+
+
+/* ///////////////////////////////////// Faq Body ///////////////////////////////////////// */
+
+
+@keyframes slidein {
+  from {
+    opacity: 0.3;
+    transform: translateY(-20%);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0%);
+  }
+}
