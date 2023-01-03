@@ -24,7 +24,7 @@ import CaseStudies from "./Page/CaseStudies";
 import Contact from "./Page/Contact";
 import FaqPage from "./Page/FaqPage"
 
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { Routes, Route, HashRouter } from "react-router-dom";
 import UrinaryTract from "./components/UrinaryTract";
 
 
@@ -32,7 +32,7 @@ function App() {
 
   return (
     <div className="App">
-      <BrowserRouter>
+      <HashRouter>
         <NavBar />
         <Routes>
           <Route path="/" element={<HomePage />} />
@@ -60,8 +60,11 @@ function App() {
           <Route path="/Faq" element={<FaqPage />} />
           <Route path="/contact" element={<Contact />} />
 
+
+
+
         </Routes>
-      </BrowserRouter>
+      </HashRouter>
     </div>
   );
 }

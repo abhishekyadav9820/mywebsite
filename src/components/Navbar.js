@@ -149,6 +149,13 @@ const NavBar = () => {
 
     <>
       <header>
+        <div className="scrollText">
+          <div className="marquee">
+            <span> Dr. DILIP RAJA IS NOW AVAILABLE FOR CONSULTATION AT BREACH CANDY
+              HOSPITAL EVERY WEDNESDAY FROM 19:00 TO 20:00. Call for
+              Appointments <a href="tel:+91 22 26452007">+91 22 26452007</a> / <a href="tel:+91 98200 74649">+91 98200 74649</a></span>
+          </div>
+        </div>
         <div className="socialMeidaAndContact">
           <div className="container">
             <div className="headerContact">
